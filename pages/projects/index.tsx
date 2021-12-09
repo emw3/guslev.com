@@ -14,7 +14,7 @@ const Projects: NextPage = () => {
           <title>Projects - {WEBSITE_TITLE}</title>
         </Head>
         <Container>
-          <div className={cn('')}>Projects</div>
+          <h1>Projects</h1>
         </Container>
       </Layout>
     </>
