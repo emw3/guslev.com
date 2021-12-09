@@ -1,10 +1,23 @@
 import type { NextPage } from 'next'
+import cn from 'classnames'
+import Head from 'next/head'
+import Container from '../components/container'
+import Layout from '../components/layout'
+import { WEBSITE_TITLE } from '../lib/constants'
+
 
 const Home: NextPage = () => {
   return (
-    <div className="flex">
-      <h1 className='m-auto'>Test</h1>
-    </div>
+    <>
+      <Layout>
+        <Head>
+          <title>{WEBSITE_TITLE} - </title>
+        </Head>
+        <Container>
+          <div className={cn('flex')}>Home</div>
+        </Container>
+      </Layout>
+    </>
   )
 }
 
