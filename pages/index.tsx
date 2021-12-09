@@ -14,7 +14,7 @@ const Home: NextPage = () => {
           <title>{WEBSITE_TITLE} - </title>
         </Head>
         <Container>
-          <div className={cn('flex')}>Home</div>
+          <h1>Home</h1>
         </Container>
       </Layout>
     </>
