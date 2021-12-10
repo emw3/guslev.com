@@ -10,7 +10,7 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <Meta />
-      <div className={cn('min-h-screen bg-white dark:bg-black')}>
+      <div className={cn('min-h-screen bg-white dark:bg-gray-900')}>
         <Header />
         <main>{children}</main>
       </div>
