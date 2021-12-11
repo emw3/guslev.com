@@ -19,12 +19,12 @@ const Header = () => {
         <Link href="/">
           <a
             className={cn(
-              "transition ease-in-out delay-150 skew-y-6 hover:skew-y-0 bg-zinc-900 dark:bg-slate-50 w-6 h-6 sm:w-8 sm:h-8 flex"
+              "transition-all duration-300 ease-in-out delay-150 skew-y-6 hover:skew-y-0 bg-zinc-900 dark:bg-slate-50 w-6 h-6 sm:w-8 sm:h-8 flex"
             )}
           >
             <span
               className={cn(
-                "m-auto text-xs sm:text-sm font-bold dark:text-zinc-900 text-slate-50"
+                "m-auto text-xs sm:text-sm font-bold transition-all duration-300 ease-in-out delay-150 dark:text-zinc-900 text-slate-50"
               )}
             >
               GL
