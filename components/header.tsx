@@ -5,7 +5,7 @@ import ToggleThemeButton from "./toggle-theme-button";
 
 const Header = () => {
   return (
-    <header className={cn("absolute inset-x-0 bottom-0 sm:inset-x-0 sm:top-0")}>
+    <header className={cn("fixed inset-x-0 bottom-0 sm:bottom-auto sm:top-0 z-50 bg-slate-50 dark:bg-zinc-900")}>
       <div
         className={cn(
           "w-full h-0.5 sm:h-1 bg-gradient-to-r from-yellow-500 via-lime-500 to-emerald-500"
@@ -13,18 +13,18 @@ const Header = () => {
       ></div>
       <div
         className={cn(
-          "py-4 sm:py-8 flex items-center justify-between mx-8 sm:mx-16"
+          "py-3 sm:py-6 flex items-center justify-between mx-8 sm:mx-16"
         )}
       >
         <Link href="/">
           <a
             className={cn(
-              "rounded-full bg-gradient-to-r from-yellow-500 via-lime-500 to-emerald-500 w-6 h-6 sm:w-8 sm:h-8 flex"
+              "transition ease-in-out delay-150 skew-y-6 hover:skew-y-0 bg-zinc-900 dark:bg-slate-50 w-6 h-6 sm:w-8 sm:h-8 flex"
             )}
           >
             <span
               className={cn(
-                "m-auto text-xs sm:text-sm font-bold dark:text-black text-white"
+                "m-auto text-xs sm:text-sm font-bold dark:text-zinc-900 text-slate-50"
               )}
             >
               GL
