@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         </Head>
         <Container>
           <div className="">
-            <div className="py-16">
+            <div className="py-8 sm:py-16">
               <p className={cn("font-mono text-xs sm:text-base mb-1 sm:mb-2")}>
                 Hello! Im
               </p>
@@ -27,10 +27,10 @@ const Home: NextPage = () => {
               </h1>
               <div
                 className={cn(
-                  "inline-flex transition ease-in-out delay-150 skew-y-3 hover:skew-y-0 p-1 sm:p-2 bg-zinc-900 text-slate-50 dark:bg-slate-50 dark:text-zinc-900"
+                  "inline-flex transition-all duration-300 ease-in-out delay-150 skew-y-3 hover:skew-y-0 p-1 sm:p-2 bg-zinc-900 dark:bg-slate-50"
                 )}
               >
-                <h2 className={cn("text-xl sm:text-3xl font-mono font-bold")}>
+                <h2 className={cn("text-xl sm:text-3xl font-mono font-bold transition-all duration-300 ease-in-out delay-150 text-slate-50 dark:text-zinc-900")}>
                   Full-Stack Developer
                 </h2>
               </div>
