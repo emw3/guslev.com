@@ -13,7 +13,7 @@ const NavLink = ({ to, name }: Props) => {
     <Link href={to}>
       <a
         className={cn(
-          "uppercase text-xs sm:text-sm tracking-widest py-2 px-4 rounded font-semibold antialiased",
+          "uppercase text-xs sm:text-sm tracking-widest py-2 px-4 rounded font-bold antialiased",
           { "text-zinc-900/50 dark:text-white/50": router.pathname !== to },
           { "text-zinc-900 dark:text-white": router.pathname == to }
         )}
