@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
+import { WEBSITE_TITLE } from "../lib/constants";
 import cn from "classnames";
 import Head from "next/head";
 import Container from "../components/container";
 import Layout from "../components/layout";
-import { WEBSITE_TITLE } from "../lib/constants";
+import SocialLinks from "../components/social-links";
 
 const Home: NextPage = () => {
   return (
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
                 </h2>
               </div>
             </div>
+            <SocialLinks />
             <div className={cn('mt-8')}>
               <p className={cn('font-sans antialiased text-base sm:text-lg tracking-normal')}>
                 Im a full-stack developer with a passion for building web and mobile applications. Ive built a number of apps for clients and have worked on a number of projects.
