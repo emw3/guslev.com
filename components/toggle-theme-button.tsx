@@ -21,14 +21,14 @@ const ToggleThemeButton = () => {
         <button
           onClick={toggleColorMode}
           className={cn("m-auto text-xs rounded", {
-            "text-amber-400": isDark,
-            "text-gray-800": !isDark,
+            "text-slate-50": isDark,
+            "text-zinc-900": !isDark,
           })}
         >
           {isDark ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 sm:h-5 sm:w-5 fill-amber-400"
+              className="h-4 w-4 sm:h-5 sm:w-5 fill-transparent"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -43,7 +43,7 @@ const ToggleThemeButton = () => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 sm:h-5 sm:w-5 fill-gray-800"
+              className="h-4 w-4 sm:h-5 sm:w-5 fill-transparent"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
