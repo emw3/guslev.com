@@ -12,7 +12,7 @@ export default function Layout({ children }: Props) {
       <Meta />
       <div
         className={cn(
-          "min-h-screen bg-slate-50 dark:bg-zinc-900 relative sm:pt-32 text-zinc-900 dark:text-slate-50"
+          "min-h-screen bg-slate-50 dark:bg-zinc-900 relative pb-16 sm:pt-32 text-zinc-900 dark:text-slate-50"
         )}
       >
         <Header />
