@@ -4,7 +4,7 @@ export default function Timeline() {
   const timelineItems = [
     {
       year: "2015",
-      technologies: ["Zoho CRM", "PHP", "Javascript", "Bootstrap"],
+      technologies: ["Zoho CRM", "PHP", "Javascript", "Bootstrap", "Git"],
     },
     {
       year: "2016",
@@ -16,7 +16,7 @@ export default function Timeline() {
     },
     {
       year: "2018",
-      technologies: [""],
+      technologies: ["Docker"],
     },
     {
       year: "2019",
@@ -32,25 +32,41 @@ export default function Timeline() {
     },
   ];
   return (
-    <div className="py-8">
+    <>
       <div className="flex flex-col">
         {timelineItems.map((item, index) => (
-          <div key={index} className="flex space-x-8">
-            <div className={cn("w-12")}>{item.year}</div>
+          <div key={index} className="flex space-x-10">
+            <div className={cn("w-12 -mt-3")}>
+              <span
+                className={cn(
+                  "font-semibold  font-sans antialiased text-base sm:text-lg tracking-normal"
+                )}
+              >
+                {item.year}
+              </span>
+            </div>
             <div className="flex flex-col items-center">
-              <div className="w-2 h-2 bg-zinc-900/25 dark:bg-slate-50/25"></div>
+              <div className="w-2 h-2 bg-zinc-900 dark:bg-slate-50"></div>
               <div className="w-px h-full bg-zinc-900/25 dark:bg-slate-50/25"></div>
             </div>
-            <div>
-              <ul>
+            <div className={cn("pb-8 -mt-3")}>
+              <ul className={cn("list-none")}>
                 {item.technologies.map((tech, index) => (
-                  <li key={index}>{tech}</li>
+                  <li key={index}>
+                    <span
+                      className={cn(
+                        "font-sans antialiased text-base sm:text-lg tracking-normal"
+                      )}
+                    >
+                      {tech}
+                    </span>
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
