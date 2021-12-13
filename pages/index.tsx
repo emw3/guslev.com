@@ -52,9 +52,11 @@ const Home: NextPage = () => {
                 then I&apos;ve not stopped learning and building new things.
                 Currently I&apos;m working at Caffelli using the React, Vue and
                 Laravel stack.
-                <br />I enjoy work with the following technologies:
               </p>
-              <Timeline />
+              <div className="py-8">
+                <p className={"font-sans antialiased text-base sm:text-lg tracking-normal mb-8"}>Brief story of my developer life:</p>
+                <Timeline />
+              </div>
             </div>
           </>
         </Container>
