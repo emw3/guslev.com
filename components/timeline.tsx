@@ -38,8 +38,8 @@ export default function Timeline() {
           <div key={index} className="flex space-x-8">
             <div className={cn("w-12")}>{item.year}</div>
             <div className="flex flex-col items-center">
-              <div className="w-2 h-2 bg-slate-50/25"></div>
-              <div className="w-px h-full bg-slate-50/25"></div>
+              <div className="w-2 h-2 bg-zinc-900/25 dark:bg-slate-50/25"></div>
+              <div className="w-px h-full bg-zinc-900/25 dark:bg-slate-50/25"></div>
             </div>
             <div>
               <ul>
