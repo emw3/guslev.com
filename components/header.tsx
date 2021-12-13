@@ -5,7 +5,7 @@ import ToggleThemeButton from "./toggle-theme-button";
 
 const Header = () => {
   return (
-    <header className={cn("fixed inset-x-0 bottom-0 sm:bottom-auto sm:top-0 z-50 bg-slate-50 dark:bg-zinc-900")}>
+    <header className={cn("fixed inset-x-0 bottom-0 sm:bottom-auto sm:top-0 z-50 bg-slate-50 sm:bg-slate-50/50 dark:bg-zinc-900 dark:sm:bg-zinc-900/50")}>
       <div
         className={cn(
           "w-full h-0.5 sm:h-1 bg-gradient-to-r from-yellow-500 via-lime-500 to-emerald-500"
