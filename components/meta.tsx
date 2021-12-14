@@ -33,7 +33,7 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and.`}
+        content={`Gustavo Levano Full-Stack Developer.`}
       />
       <meta property="og:image" content="" />
     </Head>

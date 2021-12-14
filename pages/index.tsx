@@ -12,17 +12,17 @@ const Home: NextPage = () => {
     <>
       <Layout>
         <Head>
-          <title>{WEBSITE_TITLE}</title>
+          <title>Home | {WEBSITE_TITLE}</title>
         </Head>
         <Container>
           <>
-            <div className="py-8 sm:py-16">
-              <p className={cn("font-mono text-xs sm:text-base mb-1 sm:mb-2")}>
-                Hello! Im
+            <div className={cn("py-8 sm:py-16")}>
+              <p className={cn("font-sans antialiased text-base sm:text-lg tracking-normal mb-1 sm:mb-2")}>
+                Hello! I&apos;m
               </p>
               <h1
                 className={cn(
-                  "text-3xl sm:text-5xl font-mono font-extrabold mb-4 sm:mb-6"
+                  "text-3xl sm:text-5xl font-sans font-extrabold mb-4 sm:mb-6"
                 )}
               >
                 Gustavo Levano.
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               >
                 <h2
                   className={cn(
-                    "text-xl sm:text-3xl font-mono font-bold transition-all duration-300 ease-in-out delay-150 text-slate-50 dark:text-zinc-900"
+                    "text-xl sm:text-3xl font-sans font-bold transition-all duration-300 ease-in-out delay-150 text-slate-50 dark:text-zinc-900"
                   )}
                 >
                   Full-Stack Developer
@@ -53,8 +53,8 @@ const Home: NextPage = () => {
                 Currently I&apos;m working at Caffelli using the React, Vue and
                 Laravel stack.
               </p>
-              <div className="py-8">
-                <p className={"font-sans antialiased text-base sm:text-lg tracking-normal mb-8"}>Brief story of my developer life:</p>
+                <div className={cn("py-8")}>
+                  <p className={cn("font-sans antialiased text-base sm:text-lg tracking-normal mb-8")}>My learning path:</p>
                 <Timeline />
               </div>
             </div>
