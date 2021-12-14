@@ -4,11 +4,18 @@ export default function Timeline() {
   const timelineItems = [
     {
       year: "2015",
-      technologies: ["Zoho CRM", "PHP", "Javascript", "Bootstrap", "Git"],
+      technologies: [
+        "PHP",
+        "Javascript",
+        "Bootstrap",
+        "MySQL",
+        "Git",
+        "Zoho CRM",
+      ],
     },
     {
       year: "2016",
-      technologies: ["Laravel", "Vue JS", "Vuex"],
+      technologies: ["Laravel", "Vue JS", "Vuex", "REST API"],
     },
     {
       year: "2017",
@@ -16,7 +23,7 @@ export default function Timeline() {
     },
     {
       year: "2018",
-      technologies: ["Docker"],
+      technologies: ["Docker", "Sass"],
     },
     {
       year: "2019",
@@ -24,18 +31,18 @@ export default function Timeline() {
     },
     {
       year: "2020",
-      technologies: ["Flutter", "Vue JS", "React JS", "Redux"],
+      technologies: ["React JS", "Redux", "TypeScript", "Flutter"],
     },
     {
       year: "2021",
-      technologies: ["Next JS"],
+      technologies: ["Next JS", "Cypress"],
     },
   ];
   return (
     <>
-      <div className="flex flex-col">
+      <div className={cn('"flex flex-col"')}>
         {timelineItems.map((item, index) => (
-          <div key={index} className="flex space-x-10">
+          <div key={index} className={cn("flex space-x-10")}>
             <div className={cn("w-12 -mt-3")}>
               <span
                 className={cn(
@@ -45,9 +52,11 @@ export default function Timeline() {
                 {item.year}
               </span>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="w-2 h-2 bg-zinc-900 dark:bg-slate-50"></div>
-              <div className="w-px h-full bg-zinc-900/25 dark:bg-slate-50/25"></div>
+            <div className={cn("flex flex-col items-center")}>
+              <div className={cn("w-2 h-2 bg-zinc-900 dark:bg-slate-50")}></div>
+              <div
+                className={cn("w-px h-full bg-zinc-900/25 dark:bg-slate-50/25")}
+              ></div>
             </div>
             <div className={cn("pb-8 -mt-3")}>
               <ul className={cn("list-none")}>
