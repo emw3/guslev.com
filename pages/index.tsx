@@ -57,13 +57,13 @@ const Home: NextPage = () => {
                 Currently I’m working at{" "}
                 <a
                   href="https://www.caffelli.com/"
-                  className={cn("underline font-bold decoration-green-500 decoration-2")}
+                  className={cn("underline font-bold decoration-green-500 decoration-4")}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Caffelli
                 </a>{" "}
-                using the React, Vue and Laravel stack.
+                using the <b>React</b>, <b>Vue</b> and <b>Laravel</b> stack.
               </p>
               <div className={cn("py-8")}>
                 <p
