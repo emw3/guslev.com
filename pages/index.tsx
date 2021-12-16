@@ -17,8 +17,12 @@ const Home: NextPage = () => {
         <Container>
           <>
             <div className={cn("py-8 sm:py-16")}>
-              <p className={cn("font-sans antialiased text-base sm:text-lg tracking-normal mb-1 sm:mb-2")}>
-                Hello! I&apos;m
+              <p
+                className={cn(
+                  "leading-loose text-zinc-900 dark:text-slate-50 mb-1 sm:mb-2"
+                )}
+              >
+                Hello! I’m
               </p>
               <h1
                 className={cn(
@@ -45,16 +49,30 @@ const Home: NextPage = () => {
             <div className={cn("mt-8")}>
               <p
                 className={cn(
-                  "font-sans antialiased text-base sm:text-lg tracking-normal"
+                  "leading-loose text-zinc-900 dark:text-slate-50"
                 )}
               >
                 My career as self-driven developer started 5 years ago. Since
-                then I&apos;ve not stopped learning and building new things.
-                Currently I&apos;m working at Caffelli using the React, Vue and
-                Laravel stack.
+                then I’ve not stopped learning and building new things.
+                Currently I’m working at{" "}
+                <a
+                  href="https://www.caffelli.com/"
+                  className={cn("underline font-bold decoration-green-500 decoration-4")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Caffelli
+                </a>{" "}
+                using the <b>React</b>, <b>Vue</b> and <b>Laravel</b> stack.
               </p>
-                <div className={cn("py-8")}>
-                  <p className={cn("font-sans antialiased text-base sm:text-lg tracking-normal mb-8")}>My learning path:</p>
+              <div className={cn("py-8")}>
+                <p
+                  className={cn(
+                    "leading-6 text-zinc-900 dark:text-slate-50 mb-8"
+                  )}
+                >
+                  My learning path:
+                </p>
                 <Timeline />
               </div>
             </div>

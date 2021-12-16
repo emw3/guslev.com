@@ -46,7 +46,7 @@ export default function Timeline() {
             <div className={cn("w-12 -mt-3")}>
               <span
                 className={cn(
-                  "font-semibold  font-sans antialiased text-base sm:text-lg tracking-normal"
+                  "font-semibold leading-loose text-zinc-900 dark:text-slate-50"
                 )}
               >
                 {item.year}
@@ -58,15 +58,11 @@ export default function Timeline() {
                 className={cn("w-px h-full bg-zinc-900/25 dark:bg-slate-50/25")}
               ></div>
             </div>
-            <div className={cn("pb-8 -mt-3")}>
-              <ul className={cn("list-none")}>
+            <div className={cn("pb-8 -mt-2")}>
+              <ul className={cn("list-none leading-relaxed text-zinc-900 dark:text-slate-50")}>
                 {item.technologies.map((tech, index) => (
                   <li key={index}>
-                    <span
-                      className={cn(
-                        "font-sans antialiased text-base sm:text-lg tracking-normal"
-                      )}
-                    >
+                    <span>
                       {tech}
                     </span>
                   </li>
