@@ -5,6 +5,6 @@ describe('Projects Page', () => {
     cy.visit('/')
     cy.get('a[href*="projects"]').click()
     cy.url().should('include', '/projects')
-    cy.get('h1').contains('under construction')
+    cy.get('h2').contains('Personal Website')
   })
 })
