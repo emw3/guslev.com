@@ -4,15 +4,24 @@ import cn from "classnames";
 import Head from "next/head";
 import Container from "../../components/container";
 import Layout from "../../components/layout";
-import UnderConstruction from "../../components/under-construction";
 import { WEBSITE_TITLE } from "../../lib/constants";
 
 import Image from "next/image";
 
 import PersonalWebsiteDesktopImg from "../../assets/img/personal-website.png";
+import TiendaDanivoDesktopImg from "../../assets/img/tienda-danivo.png";
 
 const Projects: NextPage = () => {
   const projectsList = [
+    {
+      title: "Tienda Danivo",
+      description: "An e-commerce built with Next.js, Shopify, Supabase and TailwindCSS.",
+      link: "https://danivo.pe",
+      domain: "danivo.pe",
+      image: TiendaDanivoDesktopImg,
+      tags: ["Next.js", "Supabase", "TailwindCSS", "React", "TypeScript"],
+      status: "In Development",
+    },
     {
       title: "Personal Website",
       description: "A personal website built with Next.js and TailwindCSS.",
@@ -33,7 +42,7 @@ const Projects: NextPage = () => {
         <Container>
           <>
             <div className={cn("py-8 sm:py-16")}>
-              <div className="flex flex-col space-y-8">
+              <div className="flex flex-col space-y-16">
                 {projectsList.map((project, index) => (
                   <article key={index}>
                     <div className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
