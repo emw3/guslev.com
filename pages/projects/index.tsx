@@ -59,13 +59,13 @@ const Projects: NextPage = () => {
                         />
                       </div>
                     </figure>
-                    <h2
+                    <h1
                       className={cn(
                         "mt-6 font-bold text-lg text-zinc-900 dark:text-slate-50"
                       )}
                     >
                       {project.title}
-                    </h2>
+                    </h1>
                     <p
                       className={cn(
                         "mt-2 mb-4 text-zinc-900 dark:text-slate-50"
