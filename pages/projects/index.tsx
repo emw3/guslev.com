@@ -45,7 +45,7 @@ const Projects: NextPage = () => {
               <div className="flex flex-col space-y-16">
                 {projectsList.map((project, index) => (
                   <article key={index}>
-                    <div className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
+                    <figure className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
                       <div
                         className={cn("drop-shadow-2xl", {
                           "blur-sm": project.status === "In Development",
@@ -58,7 +58,7 @@ const Projects: NextPage = () => {
                           layout="responsive"
                         />
                       </div>
-                    </div>
+                    </figure>
                     <h2
                       className={cn(
                         "mt-6 font-bold text-lg text-zinc-900 dark:text-slate-50"
@@ -68,14 +68,14 @@ const Projects: NextPage = () => {
                     </h2>
                     <p
                       className={cn(
-                        "mt-2 mb-6 text-zinc-900 dark:text-slate-50"
+                        "mt-2 mb-4 text-zinc-900 dark:text-slate-50"
                       )}
                     >
                       {project.description}
                     </p>
                     <a
                       className={cn(
-                        "border px-4 py-2 border-zinc-900 dark:border-slate-50 after:content-['_↗']"
+                        "justify-self-end border px-4 py-2 text-zinc-900 dark:text-slate-50 border-zinc-900 dark:border-slate-50 after:content-['_↗']"
                       )}
                       href={project.link}
                       target="_blank"
