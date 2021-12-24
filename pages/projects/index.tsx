@@ -15,7 +15,8 @@ const Projects: NextPage = () => {
   const projectsList = [
     {
       title: "Tienda Danivo",
-      description: "An e-commerce built with Next.js, Shopify, Supabase and TailwindCSS.",
+      description:
+        "An e-commerce built with Next.js, Shopify, Supabase and TailwindCSS.",
       link: "https://danivo.pe",
       domain: "danivo.pe",
       image: TiendaDanivoDesktopImg,
@@ -43,7 +44,7 @@ const Projects: NextPage = () => {
           <>
             <div className={cn("py-8 sm:py-16")}>
               <div className="flex flex-col space-y-16">
-                {projectsList.map((project, index) => (
+                {projectsList.map((project, index: number) => (
                   <article key={index}>
                     <figure className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
                       <div
