@@ -1,38 +1,35 @@
-import type { NextPage } from "next";
-import cn from "classnames";
-
-import Head from "next/head";
-import Container from "../../components/container";
-import Layout from "../../components/layout";
-import { WEBSITE_TITLE } from "../../lib/constants";
-
-import Image from "next/image";
-
-import PersonalWebsiteDesktopImg from "../../assets/img/personal-website.png";
-import TiendaDanivoDesktopImg from "../../assets/img/tienda-danivo.png";
+import type { NextPage } from 'next'
+import cn from 'classnames'
+import { WEBSITE_TITLE } from '@/lib/constants'
+import Head from 'next/head'
+import Image from 'next/image'
+import Container from '@/components/container'
+import Layout from '@/components/layout'
+import PersonalWebsiteDesktopImg from '@/assets/img/personal-website.png'
+import TiendaDanivoDesktopImg from '@/assets/img/tienda-danivo.png'
 
 const Projects: NextPage = () => {
   const projectsList = [
     {
-      title: "Tienda Danivo",
+      title: 'Tienda Danivo',
       description:
-        "An e-commerce built with Next.js, Shopify, Supabase and TailwindCSS.",
-      link: "https://danivo.pe",
-      domain: "danivo.pe",
+        'An e-commerce built with Next.js, Shopify, Supabase and TailwindCSS.',
+      link: 'https://danivo.pe',
+      domain: 'danivo.pe',
       image: TiendaDanivoDesktopImg,
-      tags: ["Next.js", "Supabase", "TailwindCSS", "React", "TypeScript"],
-      status: "In Development",
+      tags: ['Next.js', 'Supabase', 'TailwindCSS', 'React', 'TypeScript'],
+      status: 'In Development',
     },
     {
-      title: "Personal Website",
-      description: "A personal website built with Next.js and TailwindCSS.",
-      link: "/",
-      domain: "guslev.com",
+      title: 'Personal Website',
+      description: 'A personal website built with Next.js and TailwindCSS.',
+      link: '/',
+      domain: 'guslev.com',
       image: PersonalWebsiteDesktopImg,
-      tags: ["Next.js", "TailwindCSS", "React", "TypeScript"],
-      status: "Released",
+      tags: ['Next.js', 'TailwindCSS', 'React', 'TypeScript'],
+      status: 'Released',
     },
-  ];
+  ]
 
   return (
     <>
@@ -42,14 +39,14 @@ const Projects: NextPage = () => {
         </Head>
         <Container>
           <>
-            <div className={cn("py-8 sm:py-16")}>
+            <div className={cn('py-8 sm:py-16')}>
               <div className="flex flex-col space-y-16">
                 {projectsList.map((project, index: number) => (
                   <article key={index}>
                     <figure className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
                       <div
-                        className={cn("drop-shadow-2xl", {
-                          "blur-sm": project.status === "In Development",
+                        className={cn('drop-shadow-2xl', {
+                          'blur-sm': project.status === 'In Development',
                         })}
                       >
                         <Image
@@ -62,14 +59,14 @@ const Projects: NextPage = () => {
                     </figure>
                     <h1
                       className={cn(
-                        "mt-6 font-bold text-lg text-zinc-900 dark:text-slate-50"
+                        'mt-6 font-bold text-lg text-zinc-900 dark:text-slate-50'
                       )}
                     >
                       {project.title}
                     </h1>
                     <p
                       className={cn(
-                        "mt-2 mb-4 text-zinc-900 dark:text-slate-50"
+                        'mt-2 mb-4 text-zinc-900 dark:text-slate-50'
                       )}
                     >
                       {project.description}
@@ -92,7 +89,7 @@ const Projects: NextPage = () => {
         </Container>
       </Layout>
     </>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

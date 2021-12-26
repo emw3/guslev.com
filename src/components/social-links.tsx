@@ -1,10 +1,10 @@
-import cn from "classnames";
+import cn from 'classnames'
 
 const SocialLinks = () => {
   const socialLinks = [
     {
-      name: "github",
-      url: "https://github.com/emw3",
+      name: 'github',
+      url: 'https://github.com/emw3',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +32,8 @@ const SocialLinks = () => {
       ),
     },
     {
-      name: "linkedin",
-      url: "https://www.linkedin.com/in/gustavo-levano/",
+      name: 'linkedin',
+      url: 'https://www.linkedin.com/in/gustavo-levano/',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,16 +51,16 @@ const SocialLinks = () => {
         </svg>
       ),
     },
-  ];
+  ]
   return (
-    <div className={cn("flex space-x-4")}>
+    <div className={cn('flex space-x-4')}>
       {socialLinks.map(({ name, url, icon }) => (
         <a key={name} href={url} target="_blank" rel="noopener noreferrer">
           {icon}
         </a>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default SocialLinks;
+export default SocialLinks
