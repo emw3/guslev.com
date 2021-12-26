@@ -1,9 +1,9 @@
-import cn from "classnames";
-import { AnimatePresence, motion } from "framer-motion";
-import { useDarkMode } from "../hooks/useDarkMode";
+import cn from 'classnames'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useDarkMode } from '@/hooks/useDarkMode'
 
 const ToggleThemeButton = () => {
-  const [isDark, setIsDark] = useDarkMode();
+  const [isDark, setIsDark] = useDarkMode()
 
   const toggleColorMode = () => {
     setIsDark(!isDark)
@@ -20,7 +20,9 @@ const ToggleThemeButton = () => {
       >
         <button
           onClick={toggleColorMode}
-          className={cn("m-auto text-xs rounded text-zinc-900 dark:text-slate-50")}
+          className={cn(
+            'm-auto text-xs rounded text-zinc-900 dark:text-slate-50'
+          )}
         >
           {isDark ? (
             <svg
@@ -56,7 +58,7 @@ const ToggleThemeButton = () => {
         </button>
       </motion.div>
     </AnimatePresence>
-  );
-};
+  )
+}
 
-export default ToggleThemeButton;
+export default ToggleThemeButton
