@@ -1,6 +1,6 @@
 import cn from 'classnames'
 
-export default function Timeline() {
+const Timeline = () => {
   const timelineItems = [
     {
       year: '2015',
@@ -77,3 +77,5 @@ export default function Timeline() {
     </>
   )
 }
+
+export default Timeline
