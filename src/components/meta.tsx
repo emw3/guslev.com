@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Meta() {
+const Meta = () => {
   return (
     <Head>
       <link
@@ -39,3 +39,5 @@ export default function Meta() {
     </Head>
   )
 }
+
+export default Meta
