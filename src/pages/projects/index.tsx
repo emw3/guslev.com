@@ -48,7 +48,7 @@ const Projects: NextPage = () => {
                     <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-900 dark:text-slate-50">
                       {project.year}
                     </span>
-                    <figure className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
+                    <figure className="rounded">
                       <div
                         className={cn('drop-shadow-2xl', {
                           'blur-sm': project.status === 'In Development',
@@ -78,7 +78,7 @@ const Projects: NextPage = () => {
                     </p>
                     <a
                       className={cn(
-                        "justify-self-end border px-4 py-2 text-zinc-900 dark:text-slate-50 border-zinc-900 dark:border-slate-50 after:content-['_↗']"
+                        "justify-self-end border px-4 py-2 text-zinc-900 border-zinc-900 hover:bg-zinc-900 hover:text-slate-50 dark:text-slate-50 dark:border-slate-50 dark:hover:bg-slate-50 dark:hover:text-zinc-900 after:content-['_↗']"
                       )}
                       href={project.link}
                       target="_blank"
