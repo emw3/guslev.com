@@ -13,12 +13,13 @@ const Projects: NextPage = () => {
     {
       title: 'Tienda Danivo',
       description:
-        'An e-commerce built with Next.js, Shopify, Supabase and TailwindCSS.',
+        'An e-commerce built with Next.js, Commerce.js, and TailwindCSS.',
       link: 'https://danivo.pe',
       domain: 'danivo.pe',
       image: TiendaDanivoDesktopImg,
-      tags: ['Next.js', 'Supabase', 'TailwindCSS', 'React', 'TypeScript'],
+      tags: ['Next.js', 'Commerce.js', 'TailwindCSS', 'React', 'TypeScript'],
       status: 'In Development',
+      year: '2021',
     },
     {
       title: 'Personal Website',
@@ -28,6 +29,7 @@ const Projects: NextPage = () => {
       image: PersonalWebsiteDesktopImg,
       tags: ['Next.js', 'TailwindCSS', 'React', 'TypeScript'],
       status: 'Released',
+      year: '2021',
     },
   ]
 
@@ -42,7 +44,10 @@ const Projects: NextPage = () => {
             <div className={cn('py-8 sm:py-16')}>
               <div className="flex flex-col space-y-16">
                 {projectsList.map((project, index: number) => (
-                  <article key={index}>
+                  <article key={index} className="relative">
+                    <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-900 dark:text-slate-50">
+                      {project.year}
+                    </span>
                     <figure className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
                       <div
                         className={cn('drop-shadow-2xl', {
