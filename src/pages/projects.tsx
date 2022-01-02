@@ -42,20 +42,20 @@ const Projects: NextPage = () => {
         <Container>
           <>
             <div className={cn('py-8 sm:py-16')}>
-              <div className="flex flex-col space-y-16">
+              <div className="flex flex-col gap-20">
                 {projectsList.map((project, index: number) => (
                   <article key={index} className="relative">
                     <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-900 dark:text-slate-50">
                       {project.year}
                     </span>
-                    <figure className="rounded">
+                    <figure className="rounded mb-6">
                       <div
                         className={cn('drop-shadow-2xl', {
                           'blur-sm': project.status === 'In Development',
                         })}
                       >
                         <Image
-                          className="rounded"
+                          className="rounded dark:brightness-95"
                           src={project.image}
                           alt={project.title}
                           layout="responsive"
@@ -64,14 +64,14 @@ const Projects: NextPage = () => {
                     </figure>
                     <h1
                       className={cn(
-                        'mt-6 font-bold text-lg text-zinc-900 dark:text-slate-50'
+                        'mb-2 font-bold text-3xl text-zinc-900 dark:text-slate-50'
                       )}
                     >
                       {project.title}
                     </h1>
                     <p
                       className={cn(
-                        'mt-2 mb-4 text-zinc-900 dark:text-slate-50'
+                        'mb-8 text-lg font-medium text-zinc-900 dark:text-slate-50'
                       )}
                     >
                       {project.description}
