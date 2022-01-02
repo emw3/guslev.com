@@ -13,12 +13,13 @@ const Projects: NextPage = () => {
     {
       title: 'Tienda Danivo',
       description:
-        'An e-commerce built with Next.js, Shopify, Supabase and TailwindCSS.',
+        'An e-commerce built with Next.js, Commerce.js, and TailwindCSS.',
       link: 'https://danivo.pe',
       domain: 'danivo.pe',
       image: TiendaDanivoDesktopImg,
-      tags: ['Next.js', 'Supabase', 'TailwindCSS', 'React', 'TypeScript'],
+      tags: ['Next.js', 'Commerce.js', 'TailwindCSS', 'React', 'TypeScript'],
       status: 'In Development',
+      year: '2021',
     },
     {
       title: 'Personal Website',
@@ -28,6 +29,7 @@ const Projects: NextPage = () => {
       image: PersonalWebsiteDesktopImg,
       tags: ['Next.js', 'TailwindCSS', 'React', 'TypeScript'],
       status: 'Released',
+      year: '2021',
     },
   ]
 
@@ -40,17 +42,20 @@ const Projects: NextPage = () => {
         <Container>
           <>
             <div className={cn('py-8 sm:py-16')}>
-              <div className="flex flex-col space-y-16">
+              <div className="flex flex-col gap-20">
                 {projectsList.map((project, index: number) => (
-                  <article key={index}>
-                    <figure className="p-5 sm:p-10 bg-gradient-to-r from-yellow-100 via-lime-100 to-emerald-100 rounded">
+                  <article key={index} className="relative">
+                    <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-900 dark:text-slate-50">
+                      {project.year}
+                    </span>
+                    <figure className="rounded mb-6">
                       <div
                         className={cn('drop-shadow-2xl', {
                           'blur-sm': project.status === 'In Development',
                         })}
                       >
                         <Image
-                          className="rounded"
+                          className="rounded dark:brightness-95"
                           src={project.image}
                           alt={project.title}
                           layout="responsive"
@@ -59,21 +64,21 @@ const Projects: NextPage = () => {
                     </figure>
                     <h1
                       className={cn(
-                        'mt-6 font-bold text-lg text-zinc-900 dark:text-slate-50'
+                        'mb-2 font-bold text-3xl text-zinc-900 dark:text-slate-50'
                       )}
                     >
                       {project.title}
                     </h1>
                     <p
                       className={cn(
-                        'mt-2 mb-4 text-zinc-900 dark:text-slate-50'
+                        'mb-8 text-lg font-medium text-zinc-900 dark:text-slate-50'
                       )}
                     >
                       {project.description}
                     </p>
                     <a
                       className={cn(
-                        "justify-self-end border px-4 py-2 text-zinc-900 dark:text-slate-50 border-zinc-900 dark:border-slate-50 after:content-['_↗']"
+                        "justify-self-end border px-4 py-2 text-zinc-900 border-zinc-900 hover:bg-zinc-900 hover:text-slate-50 dark:text-slate-50 dark:border-slate-50 dark:hover:bg-slate-50 dark:hover:text-zinc-900 after:content-['_↗']"
                       )}
                       href={project.link}
                       target="_blank"
