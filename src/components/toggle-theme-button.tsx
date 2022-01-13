@@ -21,7 +21,7 @@ const ToggleThemeButton = () => {
         <button
           onClick={toggleColorMode}
           className={cn(
-            'm-auto text-xs rounded text-zinc-900 dark:text-slate-50'
+            'm-auto text-xs rounded text-zinc-800 dark:text-slate-200'
           )}
         >
           {isDark ? (

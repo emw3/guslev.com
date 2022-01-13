@@ -4,9 +4,9 @@ const GithubLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 17 16"
-    className="fill-zinc-900 dark:fill-slate-50 w-6 h-6 sm:w-8 sm:h-8"
+    className="fill-neutral-800 dark:fill-slate-200 w-6 h-6 sm:w-8 sm:h-8"
   >
-    <g clipPath="url(githublogo)">
+    <g>
       <path
         fill="currentColor"
         fillRule="evenodd"
@@ -29,10 +29,8 @@ const GithubLogo = () => (
 const LinkedinLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="34"
-    height="34"
     viewBox="0 0 34 34"
-    className="fill-zinc-900 dark:fill-slate-50 w-6 h-6 sm:w-8 sm:h-8"
+    className="fill-zinc-800 dark:fill-slate-200 w-6 h-6 sm:w-8 sm:h-8"
   >
     <g>
       <path
