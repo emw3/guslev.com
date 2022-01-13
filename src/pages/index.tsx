@@ -1,44 +1,67 @@
 import type { NextPage } from 'next'
-import { WEBSITE_TITLE } from '@/lib/constants'
+import { NextSeo } from 'next-seo'
+import {
+  WEBSITE_DESCRIPTION,
+  WEBSITE_IMAGE_URL,
+  WEBSITE_TITLE,
+  WEBSITE_URL,
+} from '@/lib/constants'
 import cn from 'classnames'
-import Head from 'next/head'
 import Container from '@/components/container'
 import Layout from '@/components/layout'
 import SocialLinks from '@/components/social-links'
-import Timeline from '@/components/timeline'
 
 const Home: NextPage = () => {
   return (
     <>
+      <NextSeo
+        title={WEBSITE_TITLE}
+        description={WEBSITE_DESCRIPTION}
+        openGraph={{
+          url: WEBSITE_URL,
+          type: 'website',
+          title: WEBSITE_TITLE,
+          description: WEBSITE_DESCRIPTION,
+          images: [
+            {
+              url: WEBSITE_IMAGE_URL,
+              width: 192,
+              height: 192,
+              alt: 'Gustavo Levano Logo',
+              type: 'image/png',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@gemwl',
+          site: '@gemwl',
+          cardType: 'summary_large_image',
+        }}
+      />
       <Layout>
-        <Head>
-          <title>Home | {WEBSITE_TITLE}</title>
-        </Head>
         <Container>
           <>
             <div className={cn('py-8 sm:py-16')}>
               <p
                 className={cn(
-                  'leading-loose text-zinc-900 dark:text-slate-50 text-xl font-medium mb-1 sm:mb-2'
+                  'leading-loose text-zinc-800 dark:text-slate-300 text-xl font-medium mb-1 sm:mb-2'
                 )}
               >
                 👋 Hello! I’m
               </p>
               <h1
-                className={cn(
-                  'text-5xl font-sans font-extrabold mb-4 sm:mb-6'
-                )}
+                className={cn('text-5xl font-sans font-extrabold mb-4 sm:mb-6 text-zinc-800 dark:text-slate-300')}
               >
                 Gustavo Levano.
               </h1>
               <div
                 className={cn(
-                  'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-900 dark:bg-slate-50'
+                  'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-800 dark:bg-slate-300'
                 )}
               >
                 <h2
                   className={cn(
-                    'text-3xl font-sans font-bold transition-all duration-300 ease-in-out delay-150 text-slate-50 dark:text-zinc-900'
+                    'text-3xl font-sans font-bold transition-all duration-300 ease-in-out delay-150 text-slate-200 dark:text-zinc-800'
                   )}
                 >
                   Full-Stack Developer
@@ -49,7 +72,7 @@ const Home: NextPage = () => {
             <div className={cn('mt-8')}>
               <p
                 className={cn(
-                  'leading-loose text-zinc-900 dark:text-slate-50 text-xl font-medium'
+                  'leading-loose text-zinc-800 dark:text-slate-300 text-xl font-medium'
                 )}
               >
                 My career as self-driven developer started 5 years ago. Since
