@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import cn from 'classnames'
-import { WEBSITE_TITLE } from '@/lib/constants'
-import Head from 'next/head'
+import { WEBSITE_IMAGE_URL, WEBSITE_TITLE, WEBSITE_URL } from '@/lib/constants'
 import Image from 'next/image'
 import Container from '@/components/container'
 import Layout from '@/components/layout'
 import PersonalWebsiteDesktopImg from '@/assets/img/personal-website.png'
 import TiendaDanivoDesktopImg from '@/assets/img/tienda-danivo.png'
+import { NextSeo } from 'next-seo'
 
 const Projects: NextPage = () => {
   const projectsList = [
@@ -31,21 +31,44 @@ const Projects: NextPage = () => {
       status: 'Released',
       year: '2021',
     },
+    // MJG Application
+    // Koehler Application
   ]
 
   return (
     <>
+      <NextSeo
+        title={'Projects - ' + WEBSITE_TITLE}
+        description={'Some of the projects I have worked on.'}
+        openGraph={{
+          url: `${WEBSITE_URL}/projects`,
+          type: 'website',
+          title: 'Projects - ' + WEBSITE_TITLE,
+          description: 'Some of the projects I have worked on.',
+          images: [
+            {
+              url: WEBSITE_IMAGE_URL,
+              width: 192,
+              height: 192,
+              alt: 'Gustavo Levano Logo',
+              type: 'image/png',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@gemwl',
+          site: '@gemwl',
+          cardType: 'summary_large_image',
+        }}
+      />
       <Layout>
-        <Head>
-          <title>Projects - {WEBSITE_TITLE}</title>
-        </Head>
         <Container>
           <>
             <div className={cn('py-8 sm:py-16')}>
               <div className="flex flex-col gap-20">
                 {projectsList.map((project, index: number) => (
                   <article key={index} className="relative">
-                    <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-900 dark:text-slate-50">
+                    <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-800 dark:text-slate-300">
                       {project.year}
                     </span>
                     <figure className="rounded mb-6">
@@ -64,21 +87,21 @@ const Projects: NextPage = () => {
                     </figure>
                     <h1
                       className={cn(
-                        'mb-2 font-bold text-3xl text-zinc-900 dark:text-slate-50'
+                        'mb-2 font-bold text-3xl text-zinc-800 dark:text-slate-300'
                       )}
                     >
                       {project.title}
                     </h1>
                     <p
                       className={cn(
-                        'mb-8 text-lg font-medium text-zinc-900 dark:text-slate-50'
+                        'mb-8 text-lg font-medium text-zinc-800 dark:text-slate-300'
                       )}
                     >
                       {project.description}
                     </p>
                     <a
                       className={cn(
-                        "justify-self-end border px-4 py-2 text-zinc-900 border-zinc-900 hover:bg-zinc-900 hover:text-slate-50 dark:text-slate-50 dark:border-slate-50 dark:hover:bg-slate-50 dark:hover:text-zinc-900 after:content-['_↗']"
+                        "justify-self-end border px-4 py-2 text-zinc-800 border-zinc-800 hover:bg-zinc-800 hover:text-slate-50 dark:text-slate-300 dark:border-slate-300 dark:hover:bg-slate-300 dark:hover:text-zinc-900 after:content-['_↗']"
                       )}
                       href={project.link}
                       target="_blank"
