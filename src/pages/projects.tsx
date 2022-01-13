@@ -87,7 +87,7 @@ const Projects: NextPage = () => {
                     </figure>
                     <h1
                       className={cn(
-                        'mb-2 font-bold text-3xl text-zinc-800 dark:text-slate-200'
+                        'mb-2 font-bold text-3xl text-zinc-800 dark:text-slate-100'
                       )}
                     >
                       {project.title}

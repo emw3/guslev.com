@@ -51,19 +51,19 @@ const Home: NextPage = () => {
               </p>
               <h1
                 className={cn(
-                  'text-5xl font-sans font-extrabold mb-4 sm:mb-6 text-zinc-800 dark:text-slate-200'
+                  'text-5xl font-sans font-extrabold mb-4 sm:mb-6 text-zinc-800 dark:text-slate-100'
                 )}
               >
                 Gustavo Levano.
               </h1>
               <div
                 className={cn(
-                  'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-800 dark:bg-slate-200'
+                  'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-800 dark:bg-slate-100'
                 )}
               >
                 <h2
                   className={cn(
-                    'text-3xl font-sans font-bold transition-all duration-300 ease-in-out delay-150 text-slate-200 dark:text-zinc-800'
+                    'text-3xl font-sans font-bold transition-all duration-300 ease-in-out delay-150 text-slate-100 dark:text-zinc-800'
                   )}
                 >
                   Full-Stack Developer
