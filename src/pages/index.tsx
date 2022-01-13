@@ -27,7 +27,7 @@ const Home: NextPage = () => {
               url: WEBSITE_IMAGE_URL,
               width: 192,
               height: 192,
-              alt: 'Gustavo Levano Logo',
+              alt: 'Logo',
               type: 'image/png',
             },
           ],
@@ -44,19 +44,21 @@ const Home: NextPage = () => {
             <div className={cn('py-8 sm:py-16')}>
               <p
                 className={cn(
-                  'leading-loose text-zinc-800 dark:text-slate-300 text-xl font-medium mb-1 sm:mb-2'
+                  'leading-loose text-zinc-800 dark:text-slate-200 text-xl font-medium mb-1 sm:mb-2'
                 )}
               >
                 👋 Hello! I’m
               </p>
               <h1
-                className={cn('text-5xl font-sans font-extrabold mb-4 sm:mb-6 text-zinc-800 dark:text-slate-300')}
+                className={cn(
+                  'text-5xl font-sans font-extrabold mb-4 sm:mb-6 text-zinc-800 dark:text-slate-200'
+                )}
               >
                 Gustavo Levano.
               </h1>
               <div
                 className={cn(
-                  'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-800 dark:bg-slate-300'
+                  'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-800 dark:bg-slate-200'
                 )}
               >
                 <h2
@@ -72,7 +74,7 @@ const Home: NextPage = () => {
             <div className={cn('mt-8')}>
               <p
                 className={cn(
-                  'leading-loose text-zinc-800 dark:text-slate-300 text-xl font-medium'
+                  'leading-loose text-zinc-800 dark:text-slate-200 text-xl font-medium'
                 )}
               >
                 My career as self-driven developer started 5 years ago. Since

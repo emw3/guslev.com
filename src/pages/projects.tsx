@@ -68,7 +68,7 @@ const Projects: NextPage = () => {
               <div className="flex flex-col gap-20">
                 {projectsList.map((project, index: number) => (
                   <article key={index} className="relative">
-                    <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-800 dark:text-slate-300">
+                    <span className="absolute -rotate-90 top-2 -left-6 text-xs font-extralight text-zinc-800 dark:text-slate-200">
                       {project.year}
                     </span>
                     <figure className="rounded mb-6">
@@ -87,21 +87,21 @@ const Projects: NextPage = () => {
                     </figure>
                     <h1
                       className={cn(
-                        'mb-2 font-bold text-3xl text-zinc-800 dark:text-slate-300'
+                        'mb-2 font-bold text-3xl text-zinc-800 dark:text-slate-200'
                       )}
                     >
                       {project.title}
                     </h1>
                     <p
                       className={cn(
-                        'mb-8 text-lg font-medium text-zinc-800 dark:text-slate-300'
+                        'mb-8 text-lg font-medium text-zinc-800 dark:text-slate-200'
                       )}
                     >
                       {project.description}
                     </p>
                     <a
                       className={cn(
-                        "justify-self-end border px-4 py-2 text-zinc-800 border-zinc-800 hover:bg-zinc-800 hover:text-slate-50 dark:text-slate-300 dark:border-slate-300 dark:hover:bg-slate-300 dark:hover:text-zinc-900 after:content-['_↗']"
+                        "justify-self-end border px-4 py-2 text-zinc-800 border-zinc-800 hover:bg-zinc-800 hover:text-slate-50 dark:text-slate-200 dark:border-slate-200 dark:hover:bg-slate-200 dark:hover:text-zinc-900 after:content-['_↗']"
                       )}
                       href={project.link}
                       target="_blank"

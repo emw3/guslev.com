@@ -4,7 +4,7 @@ const GithubLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 17 16"
-    className="fill-neutral-800 dark:fill-slate-300 w-6 h-6 sm:w-8 sm:h-8"
+    className="fill-neutral-800 dark:fill-slate-200 w-6 h-6 sm:w-8 sm:h-8"
   >
     <g>
       <path
@@ -30,7 +30,7 @@ const LinkedinLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 34 34"
-    className="fill-zinc-800 dark:fill-slate-300 w-6 h-6 sm:w-8 sm:h-8"
+    className="fill-zinc-800 dark:fill-slate-200 w-6 h-6 sm:w-8 sm:h-8"
   >
     <g>
       <path
