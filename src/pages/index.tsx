@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <>
       <NextSeo
-        title={WEBSITE_TITLE}
+        title={`${WEBSITE_TITLE} - ${WEBSITE_DESCRIPTION}`}
         description={WEBSITE_DESCRIPTION}
         openGraph={{
           url: WEBSITE_URL,
