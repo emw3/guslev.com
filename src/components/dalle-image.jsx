@@ -9,7 +9,6 @@ export default function DALLEImage() {
     const response = await fetch('/api/image')
 
     const image = await response.json()
-    console.log('image', image)
     setImageURL(image.url)
     setImageDescription(image.description)
   }
