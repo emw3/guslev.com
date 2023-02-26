@@ -10,12 +10,13 @@ import cn from 'classnames'
 import Container from '@/components/container'
 import Layout from '@/components/layout'
 import SocialLinks from '@/components/social-links'
+import DALLEImage from '@/components/dalle-image'
 
 const Home: NextPage = () => {
   return (
     <>
       <NextSeo
-        title={WEBSITE_TITLE}
+        title={`${WEBSITE_TITLE} - ${WEBSITE_DESCRIPTION}`}
         description={WEBSITE_DESCRIPTION}
         openGraph={{
           url: WEBSITE_URL,
@@ -41,33 +42,38 @@ const Home: NextPage = () => {
       <Layout>
         <Container>
           <>
-            <div className={cn('py-8 sm:py-16')}>
-              <p
-                className={cn(
-                  'leading-loose text-zinc-800 dark:text-slate-200 text-xl font-medium mb-1 sm:mb-2'
-                )}
-              >
-                👋 Hello! I’m
-              </p>
-              <h1
-                className={cn(
-                  'text-5xl font-sans font-extrabold mb-4 sm:mb-6 text-zinc-800 dark:text-slate-100'
-                )}
-              >
-                Gustavo Levano.
-              </h1>
-              <div
-                className={cn(
-                  'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-800 dark:bg-slate-100'
-                )}
-              >
-                <h2
+            <div className="py-8 sm:py-16 flex items-center flex-col gap-y-16 md:flex-row">
+              <div className={cn('w-full md:w-2/3')}>
+                <p
                   className={cn(
-                    'text-3xl font-sans font-bold transition-all duration-300 ease-in-out delay-150 text-slate-100 dark:text-zinc-800'
+                    'leading-loose text-zinc-800 dark:text-slate-200 text-xl font-medium mb-1 sm:mb-2'
                   )}
                 >
-                  Full-Stack Developer
-                </h2>
+                  👋 Hello! I’m
+                </p>
+                <h1
+                  className={cn(
+                    'text-5xl font-sans font-extrabold mb-4 sm:mb-6 text-zinc-800 dark:text-slate-100'
+                  )}
+                >
+                  Gustavo Levano.
+                </h1>
+                <div
+                  className={cn(
+                    'inline-flex transition-all duration-300 ease-in-out delay-150 p-1 sm:p-2 bg-zinc-800 dark:bg-slate-100'
+                  )}
+                >
+                  <h2
+                    className={cn(
+                      'text-3xl font-sans font-bold transition-all duration-300 ease-in-out delay-150 text-slate-100 dark:text-zinc-800'
+                    )}
+                  >
+                    Full-Stack Developer
+                  </h2>
+                </div>
+              </div>
+              <div className="order-first md:order-none w-full md:w-1/3 flex justify-end">
+                <DALLEImage />
               </div>
             </div>
             <SocialLinks />
