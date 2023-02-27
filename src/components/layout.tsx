@@ -12,7 +12,7 @@ const Layout = ({ children }: Props) => {
       <Meta />
       <div
         className={cn(
-          'min-h-screen bg-slate-50 dark:bg-zinc-900 relative pb-16 sm:pt-32 text-zinc-800 dark:text-slate-200'
+          'min-h-screen bg-slate-50 dark:bg-zinc-900 relative pb-20 sm:pt-32 text-zinc-800 dark:text-slate-200'
         )}
       >
         <Header />

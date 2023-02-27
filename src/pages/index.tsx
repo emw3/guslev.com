@@ -72,7 +72,7 @@ const Home: NextPage = () => {
                   </h2>
                 </div>
               </div>
-              <div className="order-first md:order-none w-full md:w-1/3 flex justify-end">
+              <div className="order-first md:order-none w-full md:w-1/3 flex justify-center md:justify-end">
                 <DALLEImage />
               </div>
             </div>
